@@ -3,9 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wagner da Silva Gonçalves</title>
+    <title>Currículo - Wagner da Silva Gonçalves</title>
+
+    <style>
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f2f4f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: #0a4faf;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        header h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        /* ===== CONTAINER ===== */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* ===== TITULOS ===== */
+        h2.section-title {
+            font-size: 26px;
+            margin-bottom: 20px;
+            border-left: 5px solid #0a4faf;
+            padding-left: 10px;
+            color: #0a3a7a;
+        }
+
+        /* ===== LISTA INFO ===== */
+        .info p {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #0a3a7a;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0a4faf;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* ===== RESPONSIVO ===== */
+        @media (max-width: 768px) {
+            header h1 { font-size: 32px; }
+            .container { padding: 20px; }
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <!-- === CABEÇALHO === -->
+    <header>
+        <h1>Wagner da Silva Gonçalves</h1>
+        <h3>Profissional de Tecnologia da Informação</h3>
+    </header>
+
+    <div class="container">
+
+        <!-- === DADOS PESSOAIS === -->
+        <h2 class="section-title">Dados Pessoais</h2>
+        <div class="info">
+            <p><span class="label">Email:</span> <a href="mailto:wsgelps@gmail.com">wsgelps@gmail.com</a></p>
+            <p><span class="label">Telefone:</span> (51) 99647-8999</p>
+            <p><span class="label">Cidade:</span> Taquara - RS</p>
+        </div>
+
+        <!-- === FORMAÇÃO === -->
+        <h2 class="section-title">Formação Acadêmica</h2>
+        <div class="info">
+            <p><span class="label">Superior Completo:</span> Gestão em Tecnologia da Informação</p>
+            <p><span class="label">Cursando:</span> Técnico em Desenvolvimento de Sistemas Bilíngue — Senac Taquara</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Currículo atualizado em 2025 — Desenvolvido por Wagner da Silva Gonçalves</p>
+    </footer>
+
 </body>
 </html>
