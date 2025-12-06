@@ -6,122 +6,76 @@
     <title>Currículo - Wagner da Silva Gonçalves</title>
 
     <style>
-        /* ===== RESET ===== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+        /* ===== RESET & BODY (Omitido por brevidade - Mantido o seu CSS) ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+        body { background-color: #f2f4f7; color: #333; line-height: 1.6; padding-top: 20px; }
+        .profile-img { width: 120px; height: 120px; border-radius: 50%; border: 5px solid #0a4faf; object-fit: cover; margin-bottom: 20px; }
+        header { background: #0a4faf; color: white; padding: 30px 20px 50px; text-align: center; box-shadow: 0 3px 8px rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; }
+        header h1 { font-size: 40px; font-weight: 600; }
+        header h3 { margin-top: 10px; font-size: 20px; opacity: 0.9; }
+        
+        /* ===== CONTAINER & TÍTULOS (Omitido por brevidade) ===== */
+        .container { max-width: 1100px; margin: 40px auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        h2.section-title { font-size: 26px; margin-bottom: 20px; border-left: 5px solid #0a4faf; padding-left: 10px; color: #0a3a7a; }
+        .info p { margin-bottom: 10px; font-size: 18px; }
+        .label { font-weight: bold; color: #0a3a7a; }
+
+        /* ===== ESTILOS NOVOS (EXPERIÊNCIA) ===== */
+        .job-entry {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
         }
 
-        body {
-            background-color: #f2f4f7;
-            color: #333;
-            line-height: 1.6;
+        .job-entry:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
         }
 
-        /* ===== HEADER ===== */
-        header {
-            background: #0a4faf;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-        }
-
-        header h1 {
-            font-size: 40px;
+        .job-title {
+            font-size: 20px;
+            color: #0a3a7a;
             font-weight: 600;
         }
 
-        header h3 {
+        .company-date {
+            font-size: 16px;
+            color: #555;
+            margin: 5px 0 10px 0;
+            font-style: italic;
+        }
+
+        .responsibilities li {
+            margin-left: 20px;
+            list-style-type: disc;
+            font-size: 16px;
+        }
+
+        /* ===== ESTILOS NOVOS (HABILIDADES) ===== */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
             margin-top: 10px;
-            font-size: 20px;
-            opacity: 0.9;
         }
 
-        /* ===== CONTAINER ===== */
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        .skill-tag {
+            background: #e3e8f0;
+            color: #0a4faf;
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
         }
 
-        /* ===== TITULOS ===== */
-        h2.section-title {
-            font-size: 26px;
-            margin-bottom: 20px;
-            border-left: 5px solid #0a4faf;
-            padding-left: 10px;
-            color: #0a3a7a;
-        }
-
-        /* ===== LISTA INFO ===== */
-        .info p {
-            margin-bottom: 10px;
-            font-size: 18px;
-        }
-
-        .label {
-            font-weight: bold;
-            color: #0a3a7a;
-        }
-
-        /* ===== FOOTER ===== */
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #0a4faf;
-            color: white;
-            margin-top: 40px;
-        }
-
-        footer p {
-            font-size: 14px;
-            opacity: 0.9;
-        }
-
-        /* ===== RESPONSIVO ===== */
-        @media (max-width: 768px) {
-            header h1 { font-size: 32px; }
-            .container { padding: 20px; }
-        }
+        /* ===== FOOTER & RESPONSIVO (Omitido por brevidade) ===== */
+        footer { text-align: center; padding: 25px; background: #0a4faf; color: white; margin-top: 40px; }
+        footer p { font-size: 14px; opacity: 0.9; }
+        @media (max-width: 768px) { header h1 { font-size: 32px; } .container { padding: 20px; } }
     </style>
 </head>
 
 <body>
 
-    <!-- === CABEÇALHO === -->
     <header>
-        <h1>Wagner da Silva Gonçalves</h1>
-        <h3>Profissional de Tecnologia da Informação</h3>
-    </header>
-
-    <div class="container">
-
-        <!-- === DADOS PESSOAIS === -->
-        <h2 class="section-title">Dados Pessoais</h2>
-        <div class="info">
-            <p><span class="label">Email:</span> <a href="mailto:wsgelps@gmail.com">wsgelps@gmail.com</a></p>
-            <p><span class="label">Telefone:</span> (51) 99647-8999</p>
-            <p><span class="label">Cidade:</span> Taquara - RS</p>
-        </div>
-
-        <!-- === FORMAÇÃO === -->
-        <h2 class="section-title">Formação Acadêmica</h2>
-        <div class="info">
-            <p><span class="label">Superior Completo:</span> Gestão em Tecnologia da Informação</p>
-            <p><span class="label">Cursando:</span> Técnico em Desenvolvimento de Sistemas Bilíngue — Senac Taquara</p>
-        </div>
-
-    </div>
-
-    <footer>
-        <p>Currículo atualizado em 2025 — Desenvolvido por Wagner da Silva Gonçalves</p>
-    </footer>
-   <script src="script.js"></script>
-</body>
-</html>
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJIAtwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAGAAMEBQcBAgj/xABDEAABAwICBQkFBgUCBwEAAAACAAEDBBIFEQYTISIyFDFBQlFSYXGBB2KRobEVIzNywdFTgpLh8GPxJCVDVHOioxb/xAAZAQADAQEBAAAAAAAAAAAAAAABAgQDAAX/xAAkEQADAQACAgICAgMAAAAAAAAAAQIRAyESMQRBE1EiMjNhcf/aAAwDAQACEQMRAD8Am+2KmGXARl/hmJfosdpotat102iixWH7PlEii2XW7OZBkmhWqhIqGS0uqJJHSKY4Ka0E6OgIjHq2/NH2j9EUUI3odwaktxIY5RK4eK5aDAA2JKelHHCSHIBUsVWVVXyUPeQ5iGPSgBFLOMI94kEO2Gcrj3lFNAeG12IVFTrAqZJIi93JnZGsbycj1593NcxkxivMQDfIVnulwRy2lEQkpukGJkc1spSD7gdnaqAzGo4CLp6pE75eTO3xdkUmYc1ppoo2Ar7VYU46oF4kh3/xLS7pAWf0y+acMCi97+Zm5/DPw
